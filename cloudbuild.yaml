@@ -13,5 +13,5 @@ steps:
            '--region', 'us-central1', '--platform', 'managed', 
            '--allow-unauthenticated']
   # [END cloudbuild_python_deploy_yaml]
-  images:
+images:
   - us-central1-docker.pkg.dev/${PROJECT_ID}/$_REPO_NAME/my-flask-image:$COMMIT_SHA
