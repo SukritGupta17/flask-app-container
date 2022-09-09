@@ -27,7 +27,7 @@ def home():
         all_planets = conn.execute(
             "SELECT * FROM planets"
         ).fetchall()
-    return f"<p>Hello, World!</p> \n Welcome home. \n <p>{all_planets}</p>"
+    return "<p>Hello, World!</p> \n Welcome home. \n"
 
 
 if __name__ == "__main__":
