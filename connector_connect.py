@@ -30,9 +30,9 @@ def connect_with_connector() -> sqlalchemy.engine.base.Engine:
     # keep secrets safe.
 
     instance_connection_name = os.environ["INSTANCE_CONNECTION_NAME"]
-    db_user = os.environ.get("DB_USER", "")
-    db_pass = os.environ["DB_PASS"]
-    db_name = os.environ["DB_NAME"]
+    db_user = os.environ.get("FLASK_DB_USER", "")
+    db_pass = os.environ["FLASK_DB_PASS"]
+    db_name = os.environ["FLASK_DB_NAME"]
 
     ip_type = IPTypes.PRIVATE if os.environ.get("PRIVATE_IP") else IPTypes.PUBLIC
 
