@@ -4,7 +4,7 @@ from flask import Flask
 import sqlalchemy
 import logging
 
-from connect_connector import connect_with_connector
+from connector_connect import connect_with_connector
 
 app = Flask(__name__)
 logger = logging.getLogger()
