@@ -36,7 +36,7 @@ def home():
             "SELECT * FROM planets"
         ).fetchall()
     logger.info(f"all planets fetched {all_planets}")
-    return "<p>Hello, World!</p> \n Welcome home. \n"
+    return f"<p>Hello, World!</p> \n Welcome home. \n {all_planets}"
 
 
 if __name__ == "__main__":
